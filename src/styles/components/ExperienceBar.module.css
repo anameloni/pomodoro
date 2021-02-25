@@ -1,0 +1,29 @@
+.experienceBar {
+  display: flex;
+  align-items: center;
+}
+
+.experienceBar span {
+  font-size: 1rem;
+}
+
+.experienceBar > div { /* > div corresponde a primeira div dentro da classe */
+  flex: 1; /* ocupa a largura máxima do container */
+  height: 4px;
+  border-radius: 4px;
+  background-color: var(--gray-line);
+  margin: 0 1.5rem;
+  position: relative;
+}
+
+.experienceBar > div > div {
+  height:4px;
+  border-radius: 4px;
+  background-color: var(--green);
+}
+
+span.currentExperience {
+  position: absolute;
+  top: 12px;
+  transform: translateX(-50%); /* Faz o centro do componente coincidir com o centro da div */
+}
